@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".fragment.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SettingsTitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/general"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:padding="9dp"
+                android:backgroundTint="@color/orange">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_dark_mode_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toStartOf="@+id/scDarkMode"
+                android:layout_toEndOf="@+id/image"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/dark_mode" />
+
+                <TextView
+                    android:id="@+id/tvDrakMode"
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/off" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scDarkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:padding="9dp">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_quality_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toStartOf="@+id/scQuality"
+                android:layout_toEndOf="@+id/layout_image"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/quality" />
+
+                <TextView
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/quality_summery" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/teal_200"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_animation_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toStartOf="@+id/scAnimation"
+                android:layout_toEndOf="@+id/layout_image1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/page_animation" />
+
+                <TextView
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/animation_summery" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/red"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_find_in_page_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toStartOf="@+id/scRememberPage"
+                android:layout_toEndOf="@+id/layout_image7"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/remember_page" />
+
+                <TextView
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/remember_page_summery" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scRememberPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?divider" />
+
+        <TextView
+            style="@style/SettingsTitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/other"
+            />
+
+        <RelativeLayout
+            android:id="@+id/feedbackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/yellow"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_feedback_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toEndOf="@+id/layout_image2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/feedback" />
+
+                <TextView
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/feedback_summery" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/blue"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_share_black_24dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_toEndOf="@+id/layout_image3"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingsTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/share" />
+
+                <TextView
+                    style="@style/HintTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:text="@string/share_summery" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rateUsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/orange"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_rate_us_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/layout_image4"
+                android:gravity="end"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/rate_us" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkUpdateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/green"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/layout_image5"
+                android:gravity="end"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/check_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_image6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="@color/blue4"
+                android:padding="9dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_version_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/SettingsTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/layout_image6"
+                android:gravity="end"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/version" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

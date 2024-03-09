@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Pdf Reader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_pdf_available">No pdf available</string>
+    <string name="swipe_vertical">Vertical</string>
+    <string name="light_mode">Light mode</string>
+    <string name="favourite">Favourite</string>
+    <string name="cancel">Cancel</string>
+    <string name="jump_page_title">Jump page</string>
+    <string name="go">Go</string>
+    <string name="home">Home</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="no_recent_available">No recent available</string>
+
+
+    <string name="permission_text">To access pdf please allow us to access media on your device.</string>
+    <string name="open_settings">1. Open settings</string>
+    <string name="tap_permission">2. Tap on Permissions</string>
+    <string name="turn_on_permission">3. Turn on Storage</string>
+    <string name="open_setting">Open Settings</string>
+    <string name="allow">Allow</string>
+    <string name="no_favourite_available">No favourite available</string>
+    <string name="night_mode">Night mode</string>
+    <string name="swipe_horizontal">Horizontal</string>
+    <string name="print">Print</string>
+    <string name="share_intent_title">Share pdf</string>
+    <string name="detail">Details</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="size">Size</string>
+    <string name="path">Path</string>
+    <string name="ok">Ok</string>
+    <string name="share">Share</string>
+    <string name="general">General</string>
+    <string name="quality">Quality</string>
+    <string name="quality_summery">Best quality means clean pdf</string>
+    <string name="invalid_page">Invalid page</string>
+    <string name="page_animation">Page animation</string>
+    <string name="animation_summery">Jump page with animation</string>
+    <string name="other">Other</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_summery">Report bugs and tell us what to improve</string>
+    <string name="share_summery">Share with your friends</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="check_update">Check for Update</string>
+    <string name="version">Version</string>
+    <string name="more">More</string>
+    <string name="remember_page">Remember page</string>
+    <string name="remember_page_summery">Get back where you left reading</string>
+    <string name="un_favourite">UnFavourite</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="page_number">Page number</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="file_is_protected">The file is protected</string>
+    <string name="password">Password</string>
+
+</resources>

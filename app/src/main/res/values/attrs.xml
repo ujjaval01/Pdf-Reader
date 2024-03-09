@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="iconBackground" format="color" />
+    <attr name="icon" format="reference" />
+    <attr name="text" format="string" />
+    <attr name="hint" format="string" />
+
+
+    <declare-styleable name="IconButton">
+        <attr name="icon" />
+        <attr name="hint" />
+        <attr name="iconBackground" />
+        <attr name="text" />
+    </declare-styleable>
+
+
+    //Theme
+    <declare-styleable name="style">
+        <attr name="textColor" format="reference" />
+        <attr name="navBackground" format="reference" />
+        <attr name="toolbarColor" format="reference" />
+        <attr name="background" format="reference"/>
+        <attr name="divider" format="reference"/>
+        <attr name="hintText" format="reference"/>
+        <attr name="cardBackground" format="reference"/>
+        <attr name="imageTint" format="reference"/>
+    </declare-styleable>
+</resources>

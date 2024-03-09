@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jump_page_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textColor="?textColor"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:textColor="?textColor"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/gray"
+        app:errorTextAppearance="@style/error_appearance"
+        app:errorEnabled="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/tvGo"
+            android:layout_width="@dimen/dimen_70dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/app_default_color"
+            android:text="@string/go"
+            android:gravity="center"
+            android:background="?selectableItemBackground"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="@dimen/dimen_70dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:textColor="?textColor"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:background="?selectableItemBackground"
+            android:layout_toStartOf="@+id/tvGo"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    >
+
+    <TextView
+        android:text="@string/detail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="?textColor"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="@string/title"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:layout_gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/title"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="@string/date"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:layout_gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/date"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="@string/size"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:layout_gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/size"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        >
+        <TextView
+            android:text="@string/path"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:layout_gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+        <TextView
+            android:id="@+id/tvPath"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/path"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

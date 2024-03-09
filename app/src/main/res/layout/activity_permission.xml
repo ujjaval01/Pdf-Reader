@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background">
+
+    <TextView
+        android:id="@+id/tvPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:paddingStart="@dimen/dimen_40dp"
+        android:paddingEnd="@dimen/dimen_40dp"
+        android:text="@string/permission_text"
+        android:textColor="?textColor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPermission"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/liPermission"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_settings"
+            android:gravity="left"
+            android:paddingBottom="@dimen/dimen_5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_permission"
+            android:gravity="left"
+            android:paddingBottom="@dimen/dimen_5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/turn_on_permission"
+            android:gravity="left"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPermission"
+        android:id="@+id/tvAllow"
+        android:text="@string/allow"
+        android:textColor="?textColor"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ripple_effect"
+        android:textSize="16sp"
+        android:paddingStart="@dimen/dimen_50dp"
+        android:paddingEnd="@dimen/dimen_50dp"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liPermission"
+        android:id="@+id/tvOpenSettings"
+        android:text="@string/open_setting"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ripple_effect"
+        android:textSize="16sp"
+        android:textColor="?textColor"
+        android:paddingStart="@dimen/dimen_30dp"
+        android:paddingEnd="@dimen/dimen_30dp"
+        android:padding="@dimen/dimen_10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_30dp"/>
+</RelativeLayout>

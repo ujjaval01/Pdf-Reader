@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_default_color">#BA0A05</color>
+    <color name="app_default_transparent">#C17B79</color>
+    <color name="app_default_color_2">#3f3d56</color>
+    <color name="colorControlNormal">#222</color>
+    <color name="colorError">#afb42b</color>
+    <color name="colorOnPrimary">@color/colorControlNormal</color>
+    <color name="colorOnSecondary">@color/colorControlNormal</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ccc</color>
+    <color name="colorPrimaryDark23">#ffffffff</color>
+    <color name="colorSecondary">@color/app_default_color</color>
+    <color name="colorSurface">#fefefe</color>
+    <color name="windowBackground">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="gray12">#E0E0E0</color>
+
+
+    <color name="dark_colorControlNormal">#ffffff</color>
+    <color name="dark_colorError">#ffeb3b</color>
+    <color name="dark_colorOnPrimary">@color/dark_colorControlNormal</color>
+    <color name="dark_colorOnSecondary">@color/dark_colorControlNormal</color>
+    <color name="dark_colorPrimary">#1E1E1E</color>
+    <color name="dark_colorPrimaryDark">@color/dark_colorPrimary</color>
+    <color name="dark_colorSecondary">@color/app_default_color</color>
+
+    <color name="dark_colorSurface">#2E2E2E</color>
+    <color name="dark_windowBackground">@color/dark_colorPrimary</color>
+    <color name="dark_colorPrimaryDark23">@color/dark_colorPrimary</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_transparent2">#5E000000</color>
+
+    <color name="yellow">#FDD70A</color>
+    <color name="blue">#00B1FF</color>
+    <color name="blue2">#9EDBF7</color>
+    <color name="blue3">#00BFC9</color>
+    <color name="blue4">#1A73E9</color>
+    <color name="green">#46CC47</color>
+    <color name="red">#FC3C3F</color>
+    <color name="orange">#FF9700</color>
+
+</resources>
