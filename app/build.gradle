@@ -10,9 +10,10 @@ android {
     defaultConfig {
         applicationId "com.cobrapdf.reader"
         minSdk 21
+        //noinspection ExpiredTargetSdkVersion
         targetSdk 31
         versionCode 1
-        versionName "1.0"
+        versionName "1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,6 +40,7 @@ android {
 
 dependencies {
 
+    implementation 'androidx.activity:activity:1.8.0'
     def viewModel = "2.4.0"
     def coroutines = "1.5.0"
     def room = "2.3.0"
