@@ -9,7 +9,7 @@ class PdfRepository(application: Application) {
     private var allPdf: LiveData<List<Pdf>>? = null
     private var favourite: LiveData<List<Pdf>>? = null
 
-    private val pdfDao = PdfDao?.getInstance(application)
+    private val pdfDao = PdfDao.getInstance(application)
 
     init {
         allPdf = pdfDao.getAllPdf()
